@@ -1,0 +1,41 @@
+#sdHeaderContent img {margin-top: -4px}
+#sdHeaderContent {background: #fff !important;}
+#navigatortab [id="ext-gen27"] {background: #222222 !important;}
+#navigatortab [id="ext-gen32"] {background: #222222 !important;}
+#navigatortab [id="ext-gen22"] {background: #222222 !important;}
+#navigatortab [id="ext-gen159"] {background: #222222 !important;}
+
+.caseTab [id*="CF00N0L000006gk5O_ilecell"] {background: orange !important}
+.caseTab [id*="cas1_ilecell"] {background: orange !important}
+.caseTab [id*="cas11_ilecell"] {background: orange !important}
+.caseTab [id*="cas5_ilecell"] {background: orange !important}
+.caseTab [id*="cas14_ilecell"] {background: orange !important}
+.caseTab [id*="cas7_ilecell"] {background: orange !important}
+.caseTab [id*="00NE0000005DBN0_ilecell"] {background: orange !important}
+
+
+/*Top Bar*/
+.caseTab td[id="navigatortab"] {background-color: #FFA500 !important;}
+.efhpCenterContent {width: 500px !important;}
+/*Title*/
+.efhpTitle {font-size: 90%;}
+/*Body*/
+.efhpBody {font-size: 90%;}
+
+
+
+/*Attachments - Move to top of page*/
+.caseTab div[id*="_RelatedAttachmentList"] {position: absolute;top: 30px;left: 780px;width: 410px;white-space: nowrap;}
+.caseTab div[id*="_RelatedAttachmentList_body"] {position: inherit;width: 400px;}
+/*Attachment Styling*/
+.caseTab div[id*="_RelatedAttachmentList"] .pbHeader > table > tbody > tr td:nth-child(3) {display: none;}
+.caseTab div[id*="_RelatedAttachmentList"] .pbTitle {width: 1%;}
+.caseTab div[id*="_RelatedAttachmentList"] .minWidth {width: 80px;}
+.caseTab div[id*="_RelatedAttachmentList"] .bPageBlock {border-top-width: 0px;border-bottom: 0px;border-left: 0px;border-right: 0px;}
+.caseTab div[id*="_RelatedAttachmentList"] .secondaryPalette {background-color: white;}
+.caseTab div[id*="_RelatedAttachmentList_body"] table {display: block; height: 160px;}
+.caseTab div[id*="_RelatedAttachmentList_body"] .list > tbody > tr > th:nth-child(3) {display: none;}
+.caseTab div[id*="_RelatedAttachmentList_body"] .list > tbody > tr:nth-child(1) th:nth-child(3) {display: none;}
+.caseTab div[id*="_RelatedAttachmentList_body"] .list > tbody .actionColumn a:nth-of-type(1) {display: none;}
+.caseTab div[id*="_RelatedAttachmentList_body"] .list > tbody td:nth-of-type(2) {display: none;}
+.caseTab div[id*="_RelatedAttachmentList_body"] .pShowMore > a:nth-child(1) {display: none;}
