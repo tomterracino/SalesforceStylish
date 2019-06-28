@@ -1,41 +1,294 @@
-#sdHeaderContent img {margin-top: -4px}
-#sdHeaderContent {background: #fff !important;}
-#navigatortab [id="ext-gen27"] {background: #222222 !important;}
-#navigatortab [id="ext-gen32"] {background: #222222 !important;}
-#navigatortab [id="ext-gen22"] {background: #222222 !important;}
-#navigatortab [id="ext-gen159"] {background: #222222 !important;}
+/*------------------------------------------------------------------------------------------------------------------*/
+/*Highlight Priority In Case or Child Case Table*/
+/*------------------------------------------------------------------------------------------------------------------*/
+body .bPageBlock .pbBody .efdFields {margin-top: 150px;}
+    
+.caseTab div[id*="_CASES_PRIORITY"] {background-color: #ffa500; font-weight: 700;}
+.Custom45Tab div[id*="_00N60000002zGKS"] {background-color: #ffa500; font-weight: 700;}
+/*------------------------------------------------------------------------------------------------------------------*/
+/*Header Icon */
+/*------------------------------------------------------------------------------------------------------------------*/
+.x-plain-header *, .support-servicedesk-navigator, .support-servicedesk-navigator * {background: #000 !important;}
+.x-tab-strip .x-tab-strip-closable a.x-tab-strip-close {background: url("https://atgdealer.my.salesforce.com/img/support/servicedesk/tabx.png") 0 -37px !important; color: #fff; background-color: #fff;}
+.caseTab.x-tab-strip-active .x-tab-strip-text .tabText, .caseTab.x-tab-strip-active.x-tab-strip-over .x-tab-strip-text .tabText, .x-tab-strip-active .tabText {font-weight: 700 !important; color: #ffa500 !important;}
+.x-tab-strip-closable.caseTab.x-tab-strip-active, .x-tab-strip-active {border-top: 3px solid #ffa500 !important;}
+.x-plain-header .tabText{color: #fff;}
+.x-plain-header .x-tab-strip-over .tabText {color: #fff !important;}
+.setupMru .mruIcon{background-image: url("http://pictures.dealer.com/s/spptdemo3/0791/dc8a202e76ec381c8aed45e95c3c2e74x.jpg") !important;}
+.sfxConsole .caseMru .mruIcon{content: url("http://pictures.dealer.com/s/spptdemo3/0026/8acb2b7246ad49787054de8e11eeb5d9x.jpg") !important;}
+.x-menu-list-item .caseMru .mruIcon{content: initial !important;}
+#sdHeaderContent { height: 61px; ; background-repeat: no-repeat; background-size: 350px 65px; background-color:#010001 !important; background-position: 1px 0px;}
+#sdHeaderContent img { display:none; }
+#sdHeaderContent .unifiedSearchBox {background: #fff;}
+#sdHeaderContent .sd_logo {background: url("https://www.dealer.com/img/ddc.svg"); height: 30px; width: 100%; background-repeat: no-repeat; top: 15px;}
+#sdHeaderContent .linkElements {top: -20px; position: relative;}
 
-.caseTab [id*="CF00N0L000006gk5O_ilecell"] {background: orange !important}
-.caseTab [id*="cas1_ilecell"] {background: orange !important}
-.caseTab [id*="cas11_ilecell"] {background: orange !important}
-.caseTab [id*="cas5_ilecell"] {background: orange !important}
-.caseTab [id*="cas14_ilecell"] {background: orange !important}
-.caseTab [id*="cas7_ilecell"] {background: orange !important}
-.caseTab [id*="00NE0000005DBN0_ilecell"] {background: orange !important}
+/*Tab Padding - Reduce Tab Padding
+.sd_primary_tabstrip .x-tab-strip-top .x-tab-left,
+.sd_secondary_tabstrip .x-tab-strip-top .x-tab-left {
+    padding: 0 10px;
+}*/
+/*------------------------------------------------------------------------------------------------------------------*/
+/*Cases*/
+/*------------------------------------------------------------------------------------------------------------------*/
+/*Row Background Color - Change every other*/
 
+.caseTab tr:nth-child(even) {
+    background-color: #ededed;
+}
+/*Change Modified Text Color*/
 
-/*Top Bar*/
-.caseTab td[id="navigatortab"] {background-color: #FFA500 !important;}
-.efhpCenterContent {width: 500px !important;}
-/*Title*/
-.efhpTitle {font-size: 90%;}
-/*Body*/
-.efhpBody {font-size: 90%;}
+.caseTab .inlineEditModified {color: red !important;}
+/*Hide Highlight Panel*/
 
+.caseTab div[id*="highlight_panel_"] {
+    display: none;
+}
+/*------------------------------------------------------------------------------------------------------------------*/
+/*Left Content*/
+/*Fix Left Content*/
 
+.caseTab .leftContent {
+    position: fixed;
+    z-index: 2;
+    background-color: #F2F4F6;
+}
+/*Hide Left Content*/
 
+.caseTab div[id*="efjl_"] li:nth-child(1) {
+    display: none;
+}
+.caseTab div[id*="efjl_"] li:nth-child(2) {
+    display: none;
+}
+.caseTab div[id*="efjl_"] li:nth-child(8) {
+    display: none;
+}
+.caseTab div[id*="efjl_"] li:nth-child(10) {
+    display: none;
+}
+.caseTab div[id*="efjl_"] li:nth-child(11) {
+    display: none;
+}
+.caseTab div[id*="efjl_"] li:nth-child(12) {
+    display: none;
+}
+.caseTab div[id*="efjl_"] li:nth-child(13) {
+    display: none;
+}
+/*Back To Top - 0.3 added fixed position back to top - 0.4 Increase Text Size/Weight */
+
+.caseTab .backToTop {
+    position: fixed;
+    top: 480px !important;
+    left: 10px !important;
+    font-weight: bold !important;
+    font-size: 120% !important;
+    z-index: 3 !important;
+}
+.caseTab .eflPageStyle .backToTop {
+    position: fixed;
+    top: 700px !important;
+    left: 30px !important;
+    font-weight: bold !important;
+    font-size: 120% !important;
+    z-index: 3 !important;
+}
+/*------------------------------------------------------------------------------------------------------------------*/
+/*Body Content*/
+/*Case Details Widen*/
+ .eflDetails .efObjectDetails {min-width: 150%;}
+
+/*Alert Panel iFrame - Hide Content and set Height*/
+
+.caseTab div[id="head_01B32000005U8fZ_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(1) {
+    height: 160px;
+}
+.caseTab div[id="head_01B32000005U8fZ_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(1) td:nth-child(1) iframe {
+    height: 37px;
+    width: 380px;
+    overflow: hidden;
+}
+/*Work Item - Set Height*/
+.caseTab div[id="head_01B32000005Lzv6_ep"] {
+    height: 170px;
+}
+/*Data from ticket to move to top of page*/
+/*------------------------------------------------------------------------------------------------------------------*/
+/*Follow Up Date - Move to top of page*/
+.caseTab div[id*="head_01B0L000009Buke_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(1) td:nth-child(3)  {display: none;}
+.caseTab div[id*="head_01B0L000009Buke_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(1) td:nth-child(4) {position: absolute; top: 100px; text-align: left; left: 100px; background:  #ffa500;}
+.caseTab div[id*="head_01B0L000009Buke_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(1) td:nth-child(4)::before{content: "Follow Up Date"; position: absolute; left: -80px; font-weight: 700; }
+
+/*Last Modified - Move to top of page*/
+.caseTab div[id*="head_01B0L000009Bukk_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(3) td:nth-child(1) {color: transparent;}
+.caseTab td[id="LastModifiedBy_ilecell"] { position: absolute; top: 129px; left: 100px; width: 270px !important; background:  #ffa500;}
+.caseTab td[id="LastModifiedBy_ilecell"]::before {content: "Last Modified By"; position: absolute; left: -90px; font-weight: 700;}
+
+/*Case Owner - Move to top of page*/
+.caseTab div[id*="head_01B0L000009Bukc_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(11) td.labelCol:nth-child(1) {color: transparent; visibility: hidden;}
+.caseTab td[id="cas1_ilecell"] {position: absolute; top: 152px; left: 100px; width: 285px !important; background:  #ffa500;}
+.caseTab td[id="cas1_ilecell"]::before {position: absolute; left: -66px; font-weight: 700; content: "Case Owner";}
+
+/*Created By - Move to top of page*/
+.caseTab div[id*="head_01B0L000009Bukk_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(1) td:nth-child(1) {color: transparent;}
+.caseTab td[id="CreatedBy_ilecell"] {position: absolute; top: 179px; left: 100px; width: 270px !important; background:  #ffa500;}
+.caseTab td[id="CreatedBy_ilecell"]::before {content: "Created By"; font-weight: 700; position: absolute; left: -60px;}
+
+/*Priority - Move to top of page*/
+.caseTab td[id="cas8_ilecell"] {background-color: #ffa500; font-weight: 700;}
+
+/*Next Update - Move to top of page*/
+.caseTab div[id*="head_01B32000005U8fb_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(5) td:nth-child(1) {
+    position: absolute;
+    top: 230px;
+    text-align: left;
+}
+.caseTab td[id*="00N60000001n0yu_ilecell"] {
+    position: absolute;
+    top: 226px;
+    left: 100px;
+    width: 270px !important;
+}
 /*Attachments - Move to top of page*/
-.caseTab div[id*="_RelatedAttachmentList"] {position: absolute;top: 30px;left: 780px;width: 410px;white-space: nowrap;}
-.caseTab div[id*="_RelatedAttachmentList_body"] {position: inherit;width: 400px;}
+.caseTab div[id*="_RelatedAttachmentList"] {position: absolute; top: 80px; right: 10%; width: 600px; white-space: nowrap; display: block;}
+.caseTab div[id*="_RelatedAttachmentList_body"] {position: inherit; width: 400px;}
 /*Attachment Styling*/
 .caseTab div[id*="_RelatedAttachmentList"] .pbHeader > table > tbody > tr td:nth-child(3) {display: none;}
 .caseTab div[id*="_RelatedAttachmentList"] .pbTitle {width: 1%;}
 .caseTab div[id*="_RelatedAttachmentList"] .minWidth {width: 80px;}
-.caseTab div[id*="_RelatedAttachmentList"] .bPageBlock {border-top-width: 0px;border-bottom: 0px;border-left: 0px;border-right: 0px;}
+.caseTab div[id*="_RelatedAttachmentList"] .bPageBlock {border-top-width: 0px; border-bottom: 0px; border-left: 0px; border-right: 0px;}
 .caseTab div[id*="_RelatedAttachmentList"] .secondaryPalette {background-color: white;}
-.caseTab div[id*="_RelatedAttachmentList_body"] table {display: block; height: 160px;}
 .caseTab div[id*="_RelatedAttachmentList_body"] .list > tbody > tr > th:nth-child(3) {display: none;}
 .caseTab div[id*="_RelatedAttachmentList_body"] .list > tbody > tr:nth-child(1) th:nth-child(3) {display: none;}
 .caseTab div[id*="_RelatedAttachmentList_body"] .list > tbody .actionColumn a:nth-of-type(1) {display: none;}
 .caseTab div[id*="_RelatedAttachmentList_body"] .list > tbody td:nth-of-type(2) {display: none;}
 .caseTab div[id*="_RelatedAttachmentList_body"] .pShowMore > a:nth-child(1) {display: none;}
+/*Hide Open Activities*/
+.caseTab div[id*="_RelatedActivityList"] {display: none;}
+/*Table and Text Styling*/
+/*------------------------------------------------------------------------------------------------------------------*/
+/*Status, Subject and Closure Solution- Change color */
+
+.caseTab td[id="cas14_ilecell"] {
+    background-color: #ffa500;
+}
+.caseTab td[id="cas7_ilecell"] {
+    background-color: #ffa500;
+}
+.caseTab td[id*="6gk5O_ilecell"] {
+    background-color: #ffa500;
+}
+.caseTab div[id*="head_01B32000005U8fe_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(2) td:nth-child(2) {
+    background-color: #ffa500;
+}
+/*Highlight Required Fields*/
+
+.caseTab div[id*="head_01B32000005U8fZ_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(4) td:nth-child(1) {
+    color: #015BA7;
+    font-weight: 700;
+}
+.caseTab div[id*="head_01B32000005U8fZ_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(5) {
+    display: none;
+}
+.caseTab div[id*="head_01B32000005U8fZ_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(6) td:nth-child(1) {
+    color: #015BA7;
+    font-weight: 700;
+}
+.caseTab div[id*="head_01B32000005U8fZ_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(6) td:nth-child(3) {
+    color: #015BA7;
+    font-weight: 700;
+}
+.caseTab div[id*="head_01B32000005U8fZ_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(7) td:nth-child(1) {
+    color: #015BA7;
+    font-weight: 700;
+}
+.caseTab div[id*="head_01B32000005U8fZ_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(9) td:nth-child(1) {
+    color: #015BA7;
+    font-weight: 700;
+}
+.caseTab div[id*="head_01B32000005U8fZ_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(12) td:nth-child(3) {
+    color: #015BA7;
+    font-weight: 700;
+}
+/*Top Bar*/
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.efhpCenterContent {
+    width: 500px !important;
+}
+/*Title*/
+
+.efhpTitle {
+    font-size: 90%;
+}
+/*Body*/
+
+.efhpBody {
+    font-size: 90%;
+}
+/*------------------------------------------------------------------------------------------------------------------*/
+/*Child Case Records*/
+/*------------------------------------------------------------------------------------------------------------------*/
+/*Row Background Color - Change every other*/
+
+.Custom45Tab tr:nth-child(even) {
+    background-color: #ededed;
+}
+/*Hide Edit/Print Button*/
+
+.Custom45Tab .links {
+    display: none;
+}
+/*Hightlight Case Owner Status and Priority*/
+
+.Custom45Tab div[id="head_01B60000005L99A_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(1) > td:nth-child(4) {
+    background-color: #ffa500;
+}
+.Custom45Tab div[id="head_01B60000005L99A_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(9) > td:nth-child(2) {
+    background-color: #ffa500;
+}
+.Custom45Tab div[id="head_01B60000005L99A_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(9) > td:nth-child(4) {
+    background-color: #ffa500;
+}
+.Custom45Tab div[id="head_01B60000005L99A_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(11) > td:nth-child(4) {
+    background-color: #ffa500;
+}
+.Custom45Tab div[id="head_01B60000005L99A_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(12) > td:nth-child(2) {
+    background-color: #ffa500;
+}
+/*Hide line items
+.Custom45Tab div[id="head_01B60000005L99A_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(6) {display: none;}
+.Custom45Tab div[id="head_01B60000005L99A_ep"] + .pbSubsection .detailList > tbody > tr:nth-child(7) {display: none;}
+.Custom45Tab div[id="head_01B32000005w8QS_ep"] {display: none;}
+.Custom45Tab div[id="head_01B32000005w8QS_ep"] + .pbSubsection {display: none;}
+.Custom45Tab div[id="head_01B32000005w8QT_ep"] {display: none;}
+.Custom45Tab div[id="head_01B32000005w8QT_ep"] + .pbSubsection {display: none;}
+/*------------------------------------------------------------------------------------------------------------------*/
+/*Service/Parent Account*/
+/*------------------------------------------------------------------------------------------------------------------*/
+/*New Case Button*/
+
+.accountTab div[id*="_00N32000002wcXT"] input[name="new_case"] {
+    position: absolute;
+    top: 142px;
+    left: 325px;
+    height: 22px
+}
+.accountTab td[id="topButtonRow"] {
+    position: absolute;
+    top: 137px;
+    left: 382px;
+    height: 22px;
+}
+/*Hide Buttons*/
+
+.accountTab td[id="topButtonRow"] input[name="dealer_testimonials"] {
+    display: none;
+}
+.accountTab td[id="topButtonRow"] input[name="dealer_group_testimonials"] {
+    display: none;
+}
+.accountTab td[id="topButtonRow"] input[name="accounts_in_collections_dealership"] {
+    display: none;
+}
